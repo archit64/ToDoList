@@ -1,0 +1,109 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    height:100vh;
+    background: linear-gradient(
+        240deg,
+        #c4e027d3,
+        #ff7300
+    );
+}
+.container{
+    /* border: 2px solid white; */
+    width: 43%;
+    min-width: 450px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+    padding: 30px 40px;
+    
+}
+#newtask{
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+#newtask input{
+    width: 70%;
+    height: 45px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    border: 2px solid rgba(207, 200, 94, 0.959);
+    padding: 12px;
+    color: black;
+    font-weight: 600;
+    position:relative;
+    border-radius: 9px;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: rgb(236, 222, 25);
+}
+#newtask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height:45px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 1000;
+    font-size: 18px;
+    background: linear-gradient(
+        240deg,#e2df14d3,
+        #f5ca0e
+    );
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#tasks{
+    background-color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 9px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    width: 100%;
+    position: relative;
+}
+.task{
+    background-color: white;
+    height: 51px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(211, 211, 34);
+    cursor: pointer;
+}
+.task span{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.task button{
+    background-color: rgb(247, 205, 21);
+     color: rgb(0, 0, 0);
+     font-size: 19.75px;
+     font-weight: 650;
+     height: 100%;  
+     width: 40px;
+     border-radius: 100px;
+     border:none;
+     cursor: pointer;
+     outline: none;
+}
+.completed{
+    text-decoration: line-through;
+}
+
+
